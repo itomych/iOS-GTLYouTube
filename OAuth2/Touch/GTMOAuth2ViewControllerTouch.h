@@ -53,6 +53,7 @@ _EXTERN NSString* const kGTMOAuth2KeychainErrorDomain       _INITIALIZE_AS(@"com
  @private
   UIButton *backButton_;
   UIButton *forwardButton_;
+    UIButton *backButton_;
   UIActivityIndicatorView *initialActivityIndicator_;
   UIView *navButtonsView_;
     UIView *closeButtonView_;
@@ -157,10 +158,14 @@ _EXTERN NSString* const kGTMOAuth2KeychainErrorDomain       _INITIALIZE_AS(@"com
 
 // user interface elements
 @property (nonatomic, retain) IBOutlet UIButton *backButton;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *closeButton;
 @property (nonatomic, retain) IBOutlet UIButton *forwardButton;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *initialActivityIndicator;
 @property (nonatomic, retain) IBOutlet UIView *navButtonsView;
+@property (strong, nonatomic) IBOutlet UIView *closeButtonView;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *rightBarButtonItem;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *closeButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *leftBarButtonItem;
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 
 #if NS_BLOCKS_AVAILABLE
