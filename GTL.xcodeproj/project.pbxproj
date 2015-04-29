@@ -199,6 +199,7 @@
 		F40E736C138A03CA00EE3F02 /* GTLTasksTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = F47C3802134B08EF00CCF631 /* GTLTasksTasks.m */; };
 		F45D6A4112F0B2140091E9D9 /* GTLObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F45D6A4012F0B2140091E9D9 /* GTLObjectTest.m */; };
 		F4CC6A111239450100522D45 /* GTLQueryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC6A101239450100522D45 /* GTLQueryTest.m */; };
+		FA78B54D1AF1103200806210 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F697FBD131C1A6800A5AB6A /* GTMOAuth2ViewTouch.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -725,7 +726,7 @@
 			name = GTLUnitTests;
 			productName = GTLUnitTests;
 			productReference = 4F12027D11A4CA2F00BEB470 /* GTLUnitTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		4F1AD9010B71603F00DC0485 /* DevelopmentTestTool */ = {
 			isa = PBXNativeTarget;
@@ -840,6 +841,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA78B54D1AF1103200806210 /* GTMOAuth2ViewTouch.xib in Resources */,
 				4F697FB6131C1A5800A5AB6A /* GTMOAuth2Window.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
