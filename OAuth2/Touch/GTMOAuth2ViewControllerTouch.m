@@ -54,7 +54,9 @@ finishedWithAuth:(GTMOAuth2Authentication *)auth
             backButton = backButton_,
             forwardButton = forwardButton_,
             navButtonsView = navButtonsView_,
+            closeButtonView = closeButtonView_,
             rightBarButtonItem = rightBarButtonItem_,
+            leftBarButtonItem = leftBarButtonItem_,
             webView = webView_,
             initialActivityIndicator = initialActivityIndicator_;
 
@@ -238,6 +240,8 @@ finishedWithAuth:(GTMOAuth2Authentication *)auth
   [initialActivityIndicator_ release];
   [navButtonsView_ release];
   [rightBarButtonItem_ release];
+  [closeButtonView_ release];
+  [leftBarButtonItem_ release];
   [webView_ release];
   [signIn_ release];
   [request_ release];
@@ -367,6 +371,9 @@ finishedWithAuth:(GTMOAuth2Authentication *)auth
 - (void)viewDidLoad {
   rightBarButtonItem_.customView = navButtonsView_;
   self.navigationItem.rightBarButtonItem = rightBarButtonItem_;
+    
+    leftBarButtonItem_.customView = closeButtonView_;
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem_;
 }
 
 - (void)popView {
