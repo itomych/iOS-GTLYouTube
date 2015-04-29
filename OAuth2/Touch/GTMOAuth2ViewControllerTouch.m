@@ -53,7 +53,7 @@ finishedWithAuth:(GTMOAuth2Authentication *)auth
 @synthesize request = request_,
             backButton = backButton_,
             forwardButton = forwardButton_,
-            closeButton = _closeButton,
+            closeButton = closeButton_,
             navButtonsView = navButtonsView_,
             closeButtonView = closeButtonView_,
             rightBarButtonItem = rightBarButtonItem_,
@@ -236,7 +236,7 @@ finishedWithAuth:(GTMOAuth2Authentication *)auth
 - (void)dealloc {
   [webView_ setDelegate:nil];
 
-  [_closeButton release];
+  [closeButton_ release];
   [backButton_ release];
   [forwardButton_ release];
   [initialActivityIndicator_ release];
@@ -750,7 +750,7 @@ static Class gSignInClass = Nil;
   return YES;
 }
 
-- (void)closeAction {
+- (IBAction)closeAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
