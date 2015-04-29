@@ -223,7 +223,7 @@
 				<reference key="IBUISimulatedDestinationMetrics" ref="102305156"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUIBarButtonItem" id="1066306474">
+			<object class="IBUIBarButtonItem" id="87570799">
 				<string key="IBUITitle">Item</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<int key="IBUIStyle">1</int>
@@ -323,7 +323,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">leftBarButtonItem</string>
 						<reference key="source" ref="1047805472"/>
-						<reference key="destination" ref="1066306474"/>
+						<reference key="destination" ref="87570799"/>
 					</object>
 					<int key="connectionID">38</int>
 				</object>
@@ -438,7 +438,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">37</int>
-						<reference key="object" ref="1066306474"/>
+						<reference key="object" ref="87570799"/>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">LeftBarButtonItem</string>
 					</object>
